@@ -21,6 +21,8 @@ import android.widget.Toast;
 
 import com.unithon.york.BuildConfig;
 import com.unithon.york.R;
+import com.unithon.york.activity.BaseActivity;
+import com.unithon.york.activity.SendDoneActivity;
 import com.unithon.york.util.CConfig;
 import com.unithon.york.util.Utils;
 
@@ -47,6 +49,7 @@ public class ContactsListActivity extends FragmentActivity implements ContactsLi
         setContentView(R.layout.activity_contact_list);
         mContext = this;
 
+        BaseActivity.add(this);
         pill_type = getIntent().getStringExtra(CConfig.PILL_TYPE);
         isTwoPaneLayout = getResources().getBoolean(R.bool.has_two_panes);
 
@@ -183,10 +186,6 @@ public class ContactsListActivity extends FragmentActivity implements ContactsLi
             }
         }).show();
 
-        /*Log.e("@@@@", contactUri.toString());
-        String a = retrieveContactNumber(contactUri);
-        Log.e("@@@@", a);*/
-
     }
 
     public void sendSMS(String smsNumber, String smsText) {
@@ -199,7 +198,8 @@ public class ContactsListActivity extends FragmentActivity implements ContactsLi
                 switch (getResultCode()) {
                     case Activity.RESULT_OK:
                         // 전송 성공
-                        Toast.makeText(mContext, "전송 완료", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(mContext, "전송 완료", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(mContext, SendDoneActivity.class));
                         break;
                     case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
                         // 전송 실패

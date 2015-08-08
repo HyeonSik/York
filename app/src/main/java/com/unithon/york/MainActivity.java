@@ -4,13 +4,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.unithon.york.activity.BaseActivity;
 import com.unithon.york.activity.PillActivity;
 import com.unithon.york.activity.SplashActivity;
-import com.unithon.york.activity.contact.ContactsListActivity;
 import com.unithon.york.util.CConfig;
 
 /**
@@ -19,15 +18,20 @@ import com.unithon.york.util.CConfig;
 public class MainActivity extends Activity implements View.OnClickListener {
 
     Context mContext;
+    boolean isDone = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mContext = this;
 
-        startActivity(new Intent(mContext, SplashActivity.class));
+        BaseActivity.add(this);
+        isDone = getIntent().getBooleanExtra("isDone", false);
+
+        if (!isDone)
+            startActivity(new Intent(mContext, SplashActivity.class));
 
 
         findViewById(R.id.map1).setOnClickListener(this);
@@ -42,7 +46,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.map1:
-                Toast.makeText(mContext, "", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "솔직히 이 정돈 직접 할 수 있잖아?", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.map2:
@@ -71,6 +75,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private void goIntent(String choose) {
         Intent intent = new Intent(mContext, PillActivity.class);
         intent.putExtra(CConfig.LOCATION, choose);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    private long backKeyPressedTime = 0;
+
+    @Override
+    public void onBackPressed() {
+        if (System.currentTimeMillis() <= backKeyPressedTime + 2000) {
+            super.onBackPressed();
+            BaseActivity.finishedAllActivity();
+            finish();
+        } else {
+            backKeyPressedTime = System.currentTimeMillis();
+            Toast.makeText(mContext, "뒤로 버튼을 한 번 더 누르면 앱이 종료됩니다.", Toast.LENGTH_SHORT).show();
+        }
     }
 }

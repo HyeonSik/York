@@ -1,5 +1,6 @@
 package com.unithon.york.activity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import com.unithon.york.util.CConfig;
 /**
  * Created by 현식 on 2015-08-08.
  */
-public class PillActivity extends AppCompatActivity implements View.OnClickListener {
+public class PillActivity extends Activity implements View.OnClickListener {
 
     Context mContext;
     String keyword;
@@ -25,6 +26,7 @@ public class PillActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_pill);
         mContext = this;
 
+        BaseActivity.add(this);
         findViewById(R.id.pill1).setOnClickListener(this);
         findViewById(R.id.pill2).setOnClickListener(this);
         findViewById(R.id.pill3).setOnClickListener(this);

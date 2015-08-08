@@ -15,7 +15,8 @@
 -->
 <resources>
 
-    <string name="app_name">YORK</string>
+    <string name="app_name">욕처방</string>
+
     <string name="activity_contacts_list">Contacts List</string>
     <string name="no_contacts">No Contacts Found</string>
     <string name="no_contact_selected">No Contact Selected</string>
