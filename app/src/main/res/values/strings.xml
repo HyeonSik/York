@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2013 The Android Open Source Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,33 +15,214 @@
 -->
 <resources>
 
-    <string name="app_name">Contacts List</string>
+    <string name="app_name">YORK</string>
     <string name="activity_contacts_list">Contacts List</string>
-    <string name="activity_contact_detail">Contact Detail</string>
-    <string name="contacts_list_search_results_title">Contacts List Search for \"%s\"</string>
-    <string name="app_description">This is a sample app, demonstrating use of the Android system Contacts Provider.</string>
-    <string name="imageview_description">Contact Thumbnail</string>
-    <string name="address_button_description">View Address</string>
-    <string name="menu_search">Search</string>
-    <string name="menu_add_contact">Add Contact</string>
-    <string name="menu_edit_contact">Edit Contact</string>
     <string name="no_contacts">No Contacts Found</string>
     <string name="no_contact_selected">No Contact Selected</string>
-    <string name="search_hint">Find contacts</string>
 
     <!-- Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
          alphabet using ListView fast scroll. -->
-    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphabet">ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ</string>
 
-    <!-- When using ContactsContract.Contacts#CONTENT_FILTER_URI to search contacts, a match occurs
-         when using a number of different fields, such as name, e-mail address, address, phone
-         number, etc. When a match occurs that is not the name, there is currently no way to tell
-         which other field was matched. This string is displayed in the secondary display text in
-         ContactsListFragment when a search query match occurs that is not the display name.
-         -->
     <string name="search_match_other">Matches Other Field</string>
 
-    <string name="no_address">No addresses found</string>
-    <string name="no_intent_found">No application found to handle this action</string>
+
+    <string-array name="KANGWON_CANCER">
+        <item>이 방꽁이 같은 놈아? 거게 있지 말고, 썩썩 물레</item>
+        <item>이 벽창우야</item>
+        <item>귀가 먹어서 아주 먹초래요</item>
+        <item>이 머스마야 정신좀 차레라!</item>
+    </string-array>
+
+    <string-array name="KANGWON_HYPER">
+        <item>니놈 속으 알수 없사, 구렝이 속이래</item>
+        <item>구떼기르 한대 올려 부치기 전에 일루 않와?</item>
+        <item>니 자꾸 갈구문 막쌔래댄다!</item>
+        <item>남어 말은 그닷하게 안든나?</item>
+    </string-array>
+
+    <string-array name="KANGWON_BREAK">
+        <item>느이 얽으바리 얼굴은 우터 우왁스럽든지</item>
+        <item>떼드바리 새끼!</item>
+        <item>니 뻐덕다리제?</item>
+    </string-array>
+
+    <string-array name="KANGWON_RES">
+        <item>늘으 봐야 눈물을 흘리지</item>
+        <item>벌기만도 못 한기!</item>
+        <item>자는 주릅이 들어서 땟국물이 줄줄 흘러</item>
+        <item>니는 우터 그러 너저분한지</item>
+    </string-array>
+
+    <string-array name="KANGWON_HEART">
+        <item>노랭이도 노랭이도 이런 노랭이는 츰이야</item>
+        <item>이놈으 지접아야, 공부좀 해라</item>
+        <item>미련텡이 가시나!</item>
+        <item>이눔 마빡을 그냥!</item>
+    </string-array>
+
+    <string-array name="KANGWON_VIBRIO">
+        <item>니는 입만 열었다 하문 울매나 씨벌럭러니는지 당최 정신이 읎아</item>
+        <item>뻭따구를 추레놓간!</item>
+        <item>진생이 눔!</item>
+    </string-array>
+
+    <string-array name="KYUNGSANG_CANCER">
+        <item>궁디를 주 차뿔라</item>
+        <item>까고 있네 문디만도 몬한게</item>
+        <item>니가 얼라도 아이고 그맹키로 바께 몬하나</item>
+        <item>쌔리 빠뿔라</item>
+        <item>정신 차리라 가시나야</item>
+    </string-array>
+
+    <string-array name="KYUNGSANG_HYPER">
+        <item>머리를 확 주 쥐뜯어뿔라</item>
+        <item>마 도란나</item>
+        <item>고마 주디를 마 확 주 잡아 째삐까</item>
+        <item>머라카노 개만도 못한 놈이</item>
+        <item>문디짜슥이 어디서 행님한테 대들어</item>
+    </string-array>
+
+    <string-array name="KYUNGSANG_BREAK">
+        <item>깝싸대지마라 죽고싶나</item>
+        <item>턱주가리 캐스터네츠처럼 자진모리 치게 해주까</item>
+        <item>주디 닥치라 마을라고</item>
+        <item>니놈 와꾸를 보면 토가 다 나온다</item>
+        <item>그냥 마 회 떠 무뿔라</item>
+    </string-array>
+
+    <string-array name="KYUNGSANG_RES">
+        <item>말도 몬하는게 어디서 깝치노</item>
+        <item>조용히 집에 들어가서 발 딱고 자라잉</item>
+        <item>가쓰나가 되도 않는 소리하지 마라</item>
+        <item>뭐라 씨부리노</item>
+        <item>지랄하고 자빠졌네 몬난 것아</item>
+    </string-array>
+
+    <string-array name="KYUNGSANG_HEART">
+        <item>닐 보면 참 내 마음이 다 아프다</item>
+        <item>정신 쫌 차리라 이것아</item>
+        <item>척추를 그냥 반으로 뽀사뿔라</item>
+        <item>개미만도 몬한게 머리 가슴 배로 삼등분해뿔라</item>
+        <item>끌베이만키로 뭐하고 댕기노</item>
+    </string-array>
+
+    <string-array name="KYUNGSANG_VIBRIO">
+        <item>배째라 개자슥아</item>
+        <item>새끼발꾸락 때만치도 안되는게</item>
+        <item>얼라맹키로 살살 빼는게 그케도 니가 사람이가</item>
+        <item>그케 빨아대다가 일본디</item>
+        <item>길가다 콱 치여뿌라</item>
+    </string-array>
+
+    <string-array name="JUNLLA_VIBRIO">
+        <item>오매, 이 인간아-! </item>
+        <item>저 웬수를 우짜까이~  </item>
+        <item>뭔 바람이 불어서 그라고 빨빨거리고 따 댕기냐. 따대기지 말고 언능 집에 들어가야  </item>
+        <item>저녁 내내 저 귀신 씨나락 까는 소릴 듣고 있을 랑께 복장이 터져 죽겄당께.</item>
+        <item>여가 어딘데 방정을 떨고있냐!</item>
+    </string-array>
+
+    <string-array name="JUNLLA_HEART">
+        <item>허벌라게 묵고 배나 터져부러라.</item>
+        <item>묵고 배나 터져라.</item>
+        <item>니한텐 싸가지라고는 약에 쓸라도 없당께. </item>
+        <item>아이 이 썩을놈아!</item>
+        <item>오매 징한거, 호랭이가 안물어가고 뭐한다냐.</item>
+    </string-array>
+
+    <string-array name="JUNLLA_BREAK">
+        <item> 씹어갈 놈 </item>
+        <item> 야 이놈아, 찍소리 말고 자빠져 있어라잉.</item>
+        <item> 야, 이 느자구 없는놈아!</item>
+        <item> 쪼잔한 새끼가 별 개같은 소리 다허고 자빠졌네</item>
+        <item> 야 이놈의 새끼야 누구한테 지랄하고 자빠졌냐</item>
+    </string-array>
+
+    <string-array name="JUNLLA_RES">
+        <item> 아이 문둥아! </item>
+        <item> 이 오살할놈.</item>
+        <item> 육 실할 것!</item>
+        <item> 빙신 육갑허고 자빠졌네</item>
+        <item> 그놈의 쌔바닥을 빼서 때기를 처불어.</item>
+    </string-array>
+
+    <string-array name="JUNLLA_HYPER">
+        <item> 이 썩을놈아, 나가 뒤져불어라.</item>
+        <item> 혼자 시부렁대고 뭔 염빙하고 있냐? </item>
+        <item> 염빙하고 자빠졌네 </item>
+        <item> 저거 저거 꼴 뵈기싫어 환정하겄구만잉. </item>
+        <item> 눈꼴시러와서 못 보것당께! 저년들을!</item>
+    </string-array>
+
+    <string-array name="JUNLLA_CANCER">
+        <item> 몽댕이로 때려죽일 년.  </item>
+        <item> 속아지 없이 쳐묵고만 댕긴께 살만 되아지 같이 쪄 같고- </item>
+        <item> 대갈통을 빵구를 내불랑께.</item>
+        <item> 더럽게 지랄해쌌네</item>
+        <item> 디져 부러도 싸!</item>
+    </string-array>
+
+    <string-array name="CHUNGCUNG_VIBRIO">
+        <item> 월레 너를 워쩐댜 </item>
+        <item> 자꾸 그럴껴? </item>
+    </string-array>
+
+    <string-array name="CHUNGCUNG_HEART">
+        <item> 까마구 고기를 삶아 묵었냐</item>
+        <item> 아이고 이 모지란 놈아 </item>
+    </string-array>
+
+    <string-array name="CHUNGCUNG_BREAK">
+        <item> 환장해 돌아가시겄네</item>
+        <item> 개갈안난다 </item>
+    </string-array>
+
+    <string-array name="CHUNGCUNG_RES">
+        <item> 얼레 이 지지바좀 보소 </item>
+        <item> 아이고 환장하겄네 이거</item>
+
+    </string-array>
+
+    <string-array name="CHUNGCUNG_HYPER">
+        <item> 아유 우리집 개만도 못허네 </item>
+        <item> 아유 숭하다 숭해 </item>
+    </string-array>
+
+    <string-array name="CHUNGCUNG_CANCER">
+        <item> 어유 이 시절!</item>
+        <item> 꼬랑내난다 가서 씨쳐! </item>
+    </string-array>
+
+    <string-array name="JEJU_VIBRIO">
+        <item>나 고라 허는 말이냐</item>
+        <item>몽케지마랑 혼자오라게</item>
+    </string-array>
+
+    <string-array name="JEJU_HEART">
+        <item>두루웨! </item>
+        <item>이 간세다림아 !</item>
+    </string-array>
+
+    <string-array name="JEJU_BREAK">
+        <item> 몽근 놈 </item>
+        <item> 이 되놈아</item>
+    </string-array>
+
+    <string-array name="JEJU_RES">
+        <item> 히여뜩헌 놈 </item>
+        <item> 본숭물</item>
+    </string-array>
+
+    <string-array name="JEJU_HYPER">
+        <item>뒈싸지라</item>
+        <item>존동머리 후려불카</item>
+    </string-array>
+
+
+    <string-array name="JEJU_CANCER">
+        <item>창지 막아진 놈</item>
+        <item>벼락맞아되갈리질 놈</item>
+    </string-array>
 
 </resources>

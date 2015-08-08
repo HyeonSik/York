@@ -1,26 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  Copyright (C) 2013 The Android Open Source Project
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="top"
+        android:background="#00c853"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-       http://www.apache.org/licenses/LICENSE-2.0
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="지역선택"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
--->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="지역을 선택해 주세요."
+        android:textColor="@android:color/black" />
 
-<!-- Main Activity single pane layout. This layout contains a single ContactsListFragment that
-     displays a list of contacts. Tapping on a contact will start a new activity to display the
-     contact details. -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
 
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-          android:name="com.unithon.york.activity.ContactsListFragment"
-          android:id="@+id/contact_list"
-          android:layout_height="match_parent"
-          android:layout_width="match_parent"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-28dp">
+
+            <ImageView
+                android:id="@+id/map1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginRight="-70dp"
+                android:src="@drawable/map_choice1" />
+
+            <ImageView
+                android:id="@+id/map2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignBaseline="@id/map1"
+                android:layout_alignTop="@id/map1"
+                android:layout_toRightOf="@id/map1"
+                android:src="@drawable/map_choice2" />
+
+            <ImageView
+                android:id="@+id/map3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/map1"
+                android:layout_marginRight="-80dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/map_choice3" />
+
+            <ImageView
+                android:id="@+id/map4"
+                android:layout_width="180dp"
+                android:layout_height="190dp"
+                android:layout_below="@id/map2"
+                android:layout_marginTop="-45dp"
+                android:layout_toRightOf="@+id/map3"
+                android:src="@drawable/map_choice4" />
+
+            <ImageView
+                android:id="@+id/map5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/map3"
+                android:layout_marginTop="-55dp"
+                android:src="@drawable/map_choice5" />
+
+            <ImageView
+                android:id="@+id/map6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/map5"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/map_choice6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
