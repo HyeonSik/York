@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-c56f992b18c6cb45e09c5e79e116005a20c81f6e.jar" />
-    </item>
-    <item
-        jar="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\classes-fb2762df5c4377aaf12bf4d1854adda508c8ee56.jar" />
-    </item>
-    <item
-        jar="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jar="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\classes-1aae0282efa9681a2daf73bac3e8394470386a66.jar" />
+        <dex dex="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\classes-02ba804fcaf7e4697af0f5afde6bcd43b24f4a26.jar" />
     </item>
     <item
-        jar="C:\Users\현식\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jar="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-48028e2d1fc0ab1b3a26436e1255f43a49643219.jar" />
+    </item>
+    <item
+        jar="C:\Users\HyeonSi\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="C:\Users\현식\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-066667cd327255d1caa6363cafdd2d8f7238ad5a.jar" />
+        <dex dex="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-a422401271ed4d01d8a906a2802919b54df87ee9.jar" />
+    </item>
+    <item
+        jar="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\HyeonSi\Documents\GitHub\York\app\build\intermediates\pre-dexed\release\classes-7d504db60c5fe6bca02e97c951bcfeab6654add0.jar" />
     </item>
 
 </items>

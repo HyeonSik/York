@@ -177,7 +177,7 @@ public class ContactsListActivity extends FragmentActivity implements ContactsLi
                 .setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        sendSMS(phoneNumber, smsMessage + "\n\n친구와 현피를 뜨고싶다면 욕처방을 설치하세요!");
+                        sendSMS(phoneNumber, smsMessage + "\n\n친구와 현피를 뜨고싶다면 욕처방을 설치하세요!\nhttps://goo.gl/u7TZsH");
                     }
                 }).setNegativeButton("취소", new DialogInterface.OnClickListener() {
             @Override
